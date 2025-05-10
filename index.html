@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Monthsary, Johanne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #fbd3e9, #bb377d);
+      font-family: 'Quicksand', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .letter {
+      max-width: 700px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #fff;
+    }
+    .photos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 40px 0;
+    }
+    .photos img {
+      width: 85%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      clip-path: polygon(50% 0%, 61% 17%, 98% 17%, 68% 40%, 79% 73%, 50% 55%, 21% 73%, 32% 40%, 2% 17%, 39% 17%);
+      opacity: 0.8;
+      animation: floatUp 10s infinite ease-in;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <!-- generate multiple hearts -->
+    <script>
+      for (let i = 0; i < 30; i++) {
+        let heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = 5 + Math.random() * 5 + 's';
+        document.querySelector('.hearts').appendChild(heart);
+      }
+    </script>
+  </div>
+
+  <header>
+    <h1>Happy Monthsary, Johanne ❤️</h1>
+    <p>From someone who misses you very much.</p>
+  </header>
+
+  <div class="letter">
+    <p>Happy Monthsary, Babe. I just want to thank you for being so patient with me through the months. I fear I may have been spending so much time on other things these past few weeks, but one thing’s for sure: I miss you. Everything makes sense when I’m with you, but right now, I find myself in a tight spot.</p>
+    <p>Life has been moving so fast lately, and I sometimes get caught up trying to keep up with studies, responsibilities, and everything in between. The only thing that grounds me in this mess is your presence — and I miss it. I miss your face, your voice, your kiss, and the comfort of simply being next to you.</p>
+    <p>With that said, I want to thank you for staying and for loving me at my best and at my worst. I miss you, and I will always miss you.</p>
+  </div>
+
+  <div class="photos">
+    <img src="/mnt/data/IMG_4953.jpg" alt="Photo 1">
+    <img src="/mnt/data/IMG_6683.jpg" alt="Photo 2">
+    <img src="/mnt/data/att.4DOe6SrAHXLkd_5ZcTV9rsmx_nudRYrcpDbxNL_7fss.jpg" alt="Photo 3">
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://youtu.be/Hsl9IZxxY0I?si=UGJrU2m0DDiW_Swp" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
