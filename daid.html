@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Monthsary, Babe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .letter {
+      max-width: 600px;
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      line-height: 1.8;
+    }
+
+    .gallery {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .button {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background-color: #ff99c8;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff71a3;
+    }
+
+    audio {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Monthsary, Babe</h1>
+  <div class="letter">
+    <p>I just want to thank you for being so patient with me through the months. I fear I may have been spending so much time on other things these past few weeks, but one thing's for sure—I miss you.</p>
+    <p>Everything makes sense when I'm with you, but right now, life feels overwhelming. I sometimes get caught up trying to keep up with studies, responsibilities, and everything in between. The only thing that grounds me is your presence—and I miss it so much.</p>
+    <p>I miss your face, your voice, your kiss, and the comfort of simply being next to you. Thank you for loving me at my best and at my worst. I miss you, and I always will.</p>
+  </div>
+
+  <div class="gallery">
+    <img src="IMG_4953.jpg" alt="Photo 1" />
+    <img src="IMG_6683.jpg" alt="Photo 2" />
+    <img src="att.4DOe6SrAHXLkd_5ZcTV9rsmx_nudRYrcpDbxNL_7fss.jpg" alt="Photo 3" />
+    <img src="https://via.placeholder.com/400x300?text=You+and+Me" alt="Placeholder" />
+  </div>
+
+  <button class="button" onclick="window.open('https://youtu.be/Hsl9IZxxY0I?si=UGJrU2m0DDiW_Swp', '_blank')">Play Our Song</button>
+</body>
+</html>
